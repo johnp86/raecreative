@@ -1,0 +1,39 @@
+html, body{height: auto;}
+header h1{width: 300px; height: 90px; margin: 0 auto;}
+header h1 img{width:300px; height: 80px;}
+h2 img{width:250px; height: 50px;}
+
+#wrapper{height:auto;}
+
+nav{margin-bottom: 4px; position:relative;}
+nav ul{width: 90%; min-width: 0; margin: 0 auto; padding: 2px 0;text-align:center; border:none;}
+nav ul li{width: 100%; padding: 20px 0; margin:0; display: block; position: relative; border-top: solid 1px #ddd; font-family: pres; font-weight: normal; text-transform: uppercase; letter-spacing: 6px;}
+nav ul li a{color: #aaaaaa; text-decoration: none;}
+nav ul li:visited a{color: #aaaaaa;}
+nav ul li:hover a{color: #000000;}
+nav ul li a.active{color: #000000;}
+nav ul.second-tier, nav ul.col-second-tier{width: 100%; position: relative; top: 0; border: none; background: #000; filter: alpha(opacity=80); background: rgba(0,0,0,0.8); z-index: 50; display:none; color: #fff;}
+nav ul.second-tier li a, nav ul.col-second-tier li a{color: #fff;}
+nav ul.second-tier li:hover a, nav ul.col-second-tier li:hover a{color: #ddd;}
+nav ul.second-tier li a.active, nav ul.col-second-tier li a.active{color: #ddd; /*border-bottom: 1px solid #ddd;*/}
+
+
+.content{width: 100%; height: 240px; min-height: 0; position: relative;}
+#home .content{height: auto;}
+.content_incl_footer{width: 100%; position: relative;}
+.container{width: 100%; height: auto; position: absolute; top: 240px;}
+
+.center{padding: 20px 0}
+.gray_center{width: 80%; margin: 10px auto 0; padding: 1% 5%;}
+.gray_center h1{height: auto; margin-bottom: 20px;}
+
+.left, .right{width: 90%; margin: 0 auto; padding: 10px 0; float: none;}
+
+span.webaddress{display:none;}
+
+footer{position: relative; bottom: 0; min-width:0; margin-top: 0;}
+footer #top_footer{margin-bottom: 10px;}
+footer #mid_footer{padding-top: 10px; border-top: 1px solid #ddd;}
+footer #mid_footer ul{min-width: 0px; margin: 0 auto;}
+footer #mid_footer ul li{margin-bottom: 10px; display: block; float: none;}
+footer #bottom_footer{margin: 30px 0;}

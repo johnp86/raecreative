@@ -1,0 +1,9 @@
+
+ul{list-style: none; font-size: 9px;}
+ul li{margin-bottom: 12px; font-family: pres; font-size: 9px; font-weight: normal; letter-spacing: 3px;  line-height: 1.2;}
+
+nav{margin-bottom: 4px; position:relative;}
+nav ul{min-width: 1010px; margin: 0 auto; padding: 2px 0; border-top: solid 1px #ddd; border-bottom: solid 1px #ddd; text-align:center;}
+nav ul li{display: inline; position: relative; font-family: pres; font-weight: normal; font-size: 14px; letter-spacing: 6px; margin: 0 8px;}
+nav ul.second-tier{width: 100%; position: absolute; top: 26px; left: 0; border: none; background: #fff; filter: alpha(opacity=80); background: rgba(255,255,255,0.8); z-index: 50; display:none;}
+

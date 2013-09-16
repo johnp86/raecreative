@@ -1,0 +1,231 @@
+/*
+Theme Name: RaeCreative
+Theme URI: http://raecreative.com/
+Description: RaeCreative bespoke template.
+Author: John Peet
+Author URI: http://iamjohnpeet.com/
+Version: 1.0
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+
+*{margin: 0; padding: 0; border: none; outline: none; text-transform: uppercase;}    /* Make HTML 5 elements display block-level for consistent styling */  
+header, nav, article, footer, address, video {display: block;}  /* IE HTML5 tags  */
+/* ================ fonts ======================= */
+@font-face {
+	font-family: 'pres';
+		src: url('../fonts/PresicavLt-Regular.eot'); /* IE9 Compat Modes */
+		src: url('../fonts/PresicavLt-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 /*url('../fonts/PresicavLt-Regular.woff') format('woff'),  Modern Browsers */
+			 url('../fonts/PresicavLt-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+			 url('../fonts/PresicavLt-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* TAGS */
+html, body{height: 100%;}
+#wrapper{width: 100%; height: 100%; min-height: 100%; margin: 0 auto; position: relative;}
+header{padding-top: 10px;}
+header h1{width: 510px; height: 115px; margin-bottom: 26px;}
+h1{margin: 0 auto; font-weight: 100; letter-spacing: 8px; /*background: url("images/logo.jpg") no-repeat; text-indent: -2000px;*/}
+	h1 img{width:510px; height:136px;}
+h2{margin-bottom:4px; font-size: 10px; letter-spacing: 7px;}
+h3{/*font-family: pres;*/ font-weight: normal; font-size: 12px; letter-spacing: 6px; text-align: center; color: #e1e1e1;}
+h2 img{width:274px;}
+p{margin-bottom: 12px; font-family: pres; font-size: 9px; font-weight: normal; letter-spacing: 3px;  line-height: 1.2;}
+a{color: inherit;}
+a:hover{border-bottom: 1px solid #000;}
+ul{list-style: none; font-size: 9px;}
+ul li{margin-bottom: 12px; font-family: pres; font-size: 9px; font-weight: normal; letter-spacing: 3px;  line-height: 1.2;}
+
+/* TOP NAVIGATION*/
+nav{margin-bottom: 4px; position:relative;}
+nav ul{width: 90%; min-width: 1230px; margin: 0 auto; padding: 2px 0; border-top: solid 1px #ddd; border-bottom: solid 1px #ddd; text-align:center;}
+nav ul li{display: inline; position: relative; font-family: pres; font-weight: normal; font-size: 14px; letter-spacing: 5px; margin: 0 16px;}
+nav ul li a{color: #aaaaaa; text-decoration: none;}
+nav ul li:visited a{color: #aaaaaa;}
+nav ul li:hover a{color: #000000; border: none;}
+nav ul li a.active{color: #000000;}
+nav ul.second-tier, nav ul.col-second-tier{width: 100%; position: absolute; top: 26px; left: 0; border: none; background: #fff; filter: alpha(opacity=80); background: rgba(255,255,255,0.8); z-index: 50; display:none;}
+nav ul.col-second-tier li a{color: #000000;}
+nav ul.col-second-tier li:hover a{color: #AAAAAA;}
+nav ul.col-second-tier li a.active{color: #AAAAAA;}
+nav ul.second-tier li a{color: #AAAAAA;}
+nav ul.second-tier li:hover a{color: #000000;}
+nav ul.second-tier li a.active{color: #000000;}
+
+#home nav ul li a{color: #000000;}
+#home nav ul li:visited a{color: #000000;}
+#home nav ul li:hover a{color: #aaaaaa;}
+
+/* HOME PAGE SLIDESHOW */
+#home_slider{position: relative; text-align: center;}
+#home_slider img{width: 100%; vertical-align: middle;}
+
+ul#home_images li{width: 100%;}
+ul#home_images li img{width: 100%;}
+
+/* CONTENT AREA, HOLDS FULL SIZE BG IMAGE */
+.content{width: 100%; min-height: 100%; /* real browsers */ height: 100%; /* IE6: treated as min-height*/ position: relative; display: none;}
+.content p:hover a{text-decoration: underline;}
+.content_incl_footer{width: 100%; overflow: auto; padding-bottom: 100px; position: relative;}
+
+/* Background images fullscreen */
+.content{
+background:url(/images/COLLECTION_MANAGEMENT_CAMPAIGN_EDITORIAL.jpg) no-repeat;
+/* IE: treated as min-height*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/COLLECTION_MANAGEMENT_CAMPAIGN_EDITORIAL.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/COLLECTION_MANAGEMENT_CAMPAIGN_EDITORIAL.jpg', sizingMethod='scale')";}
+
+#about .content{
+background:url(/images/ABOUT.jpg) no-repeat;
+/* IE: treated as min-height*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/ABOUT.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/ABOUT.jpg', sizingMethod='scale')";}
+#clients .content{
+background:url(/images/RC_CLIENTS_PAGE_PHOTO.jpg) no-repeat;
+/* IE: treated as min-height*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/RC_CLIENTS_PAGE_PHOTO.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/RC_CLIENTS_PAGE_PHOTO.jpg', sizingMethod='scale')";}
+#collection .content{
+background:url(/images/COLLECTIONMANAGEMENT1.jpg) no-repeat;
+/* IE: treated as min-height*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/COLLECTIONMANAGEMENT1.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/COLLECTIONMANAGEMENT1.jpg', sizingMethod='scale')";}
+#creative .content{
+background:url(/images/RC_CD_PAGE_PHOTO1.jpg) no-repeat;
+/* IE: treated as min-height*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/RC_CD_PAGE_PHOTO1.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/RC_CD_PAGE_PHOTO1.jpg', sizingMethod='scale')";}
+#shows_and_presentation .content{
+background:url(/images/COLLECTION_MANAGEMENT_SHOWS.jpg) no-repeat;
+/* IE: treated as min-height*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/COLLECTION_MANAGEMENT_SHOWS.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/COLLECTION_MANAGEMENT_SHOWS.jpg', sizingMethod='scale')";}
+#campaign_and_editorial .content{
+background:url(/images/COLLECTION_MANAGEMENT_CAMPAIGN_EDITORIAL.jpg) no-repeat;
+/* IE: treated as min-height*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/COLLECTION_MANAGEMENT_CAMPAIGN_EDITORIAL.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/COLLECTION_MANAGEMENT_CAMPAIGN_EDITORIAL.jpg', sizingMethod='scale')";}
+
+#contact .content{background: #fff;}
+
+#about .content, #collection .content, #clients .content, #creative .content, #contact .content, #shows_and_presentation .content, #campaign_and_editorial .content{
+	background-position:top left fixed;
+	-o-background-size: 100% auto, auto;
+	-moz-background-size: 100% auto, auto;
+	-webkit-background-size: 100% auto, auto;
+	background-size: 100% auto, auto;
+}
+
+.container{width: 90%; max-width: 987px; margin: 0 auto; text-align: center;}
+/* CONTENT BOXES LEFT, RIGHT AND CENTRE */
+.left{width: 330px; margin-top: 30px; padding: 22px 20px; float:left; filter: alpha(opacity=90); background: rgb(255,255,255); background: rgba(255, 255, 255, 0.9);}
+.right{width: 340px; margin-top: 30px; padding: 22px; float: right; filter: alpha(opacity=90); background: rgb(255,255,255); background: rgba(255, 255, 255, 0.9);}
+.center{margin: 0 auto; padding: 70px 20px 0; text-align: center;}
+.center ul{list-style: none;}
+.center ul li{margin-bottom: 6px; font-family: pres; font-size: 14px; font-weight: normal; letter-spacing: 2px;  line-height: 1.6;}
+
+.left ul,.right ul {text-align: left; margin-top: 28px; padding-left: 16px; text-indent: -5px;}
+.left ul li:before, .right ul li:before{ content: "-";}
+.left ul li span, .right ul li span{position: relative; left:10px;}
+.center ul li a:hover{padding: 0 8px; background: #fff; color: #000;}
+
+.gray_center{width: 512px; margin: 10px auto 0; padding: 10px 30px 26px; position: relative; background: #ddd; text-align:center;}
+.gray_center h1{height: auto; margin-bottom: 20px;}
+.gray_center p{font-size: 7px; line-height: 1.8;}
+#company-information{display:none;}
+#terms-and-privacy{display: none;}
+
+.client_item{display: block; margin: 30px 0;}
+.client_logo{margin: 0px auto;}
+
+/*   VIDEO    */
+.right_video{float: right; margin-top: 30px;}
+
+.videoPlayer{width: 600px; height: 320px; margin: 0 auto; position: relative; color: #fff;}
+#myVideo{position: absolute; top: 0; left: 0;}
+
+.video_title{line-height: 14px; font-size: 10px; margin-bottom: 10px;}
+.videoPosterImg{width:100%; position: absolute; left: 0; top: 0; display: none;}
+.toPlay{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(0,0,0); background: rgba(0,0,0,0.2); cursor: pointer;}
+.toPlay img{position: absolute; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px;}
+.btnPlay{background: url(../images/video_controls.png) 0 0 no-repeat; width: 30px; height: 30px; text-indent: -2000px; overflow: hidden;}
+.btnPlay:hover{border:none;}
+
+.videoControls{width: 100%; height: 30px; position: absolute; bottom: -30px; left: 0; background: rgb(255,255,255); background: rgba(255,255,255,0.6);}
+.videoControls .control, .videoControls .progressionTime, .videoControls .progressBar, .videoControls a, .videoControls .volumeBar{float: left;}
+
+.fullscreen{width: 30px; height: 30px; margin-left: 2%; float: left; background: url(../images/video_controls.png) -120px 0 no-repeat; cursor: pointer; text-indent: -2000px; overflow: hidden;}
+:-webkit-full-screen #myvideo {width: 100%;height: 100%;}
+
+.muted{width: 30px; height: 30px; background: url(../images/video_controls.png) -60px 0 no-repeat; text-indent: -2000px; overflow: hidden;}
+.muted:hover{border:none;}
+
+.progressBar{position: relative; width: 82%; height:1px; background-color: #222; top: 50%; cursor: pointer;}
+.volumeBar{width: 3px; height: 50px; margin-bottom: -20px; position: relative; bottom: 26px; background-color: #222; cursor: pointer; display: none;}
+.timeBar, .volume{position: absolute; left: 0; width: 0; height: 100%; background-color: #aaa;}
+.timeBar{top: 0; }
+.volume{width: 100%; bottom: 0; }
+video:-webkit-full-screen{ max-height: 100%; }
+video:-moz-full-screen{ max-height: 100%; }
+
+span.webaddress{height: 12px; position: fixed; bottom: 6px; right: 10px; color: #fff; font-family: pres; font-weight: normal; font-size: 10px; text-align: right; letter-spacing: 6px; z-index: 30}
+
+
+/* FOOTER */
+
+footer{width: 90%; margin: -100px auto 0; position: relative; color: #ddd; text-align: center;}
+footer #top_footer{margin-bottom: 10px;}
+footer #mid_footer{padding-top: 10px; border-top: 1px solid #ddd;}
+footer #mid_footer ul{width: 80%; min-width: 960px; margin: 0 auto;}
+footer #mid_footer ul li{display: inline; float: left; margin: 0 15%;}
+footer #bottom_footer{margin: 30px 0;}
+
+/* Misc */
+.clearfloat{clear: both;}
+.gray{color: #ddd;}
+.black_line{width: 100%; height: 6px; margin: 20px 0; border-top: solid 1px #aaa;}
+.exit{width: 20px; height: 20px; position: absolute; top: 5px; right: 5px; color: #fff; cursor: pointer; font-size: 8px;}
+.no_uline:hover{border: none;}
+
+
+/* SCROLLBAR */
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.scroll-pane{width: 330px; height: 300px;}
+.jspContainer{overflow: hidden; position: relative;}
+.jspPane{position: absolute;}
+.jspVerticalBar{position: absolute;top: 0;right: 0;width: 3px;height: 100%;background: red;}
+.jspHorizontalBar{position: absolute;bottom: 0;left: 0;width: 100%;height: 16px;background: red;}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{margin: 0;padding: 0;}
+.jspCap{display: none;}
+.jspHorizontalBar .jspCap{float: left;}
+.jspTrack{background: #bbb;position: relative;}
+.jspDrag{background: #fff;position: relative;top: 0;left: 0;cursor: pointer;}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{float: left;height: 100%;}
+.jspArrow{background: #50506d;text-indent: -20000px;display: block;cursor: pointer;}
+.jspArrow.jspDisabled{cursor: default;background: #80808d;}
+.jspVerticalBar .jspArrow{height: 16px;}
+.jspHorizontalBar .jspArrow{width: 16px;float: left;height: 100%;}
+.jspVerticalBar .jspArrow:focus{outline: none;}
+.jspCorner{background: #eeeef4;float: left;height: 100%;}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug */
+* html .jspCorner{margin: 0 -3px 0 0;}  
+
+
+
